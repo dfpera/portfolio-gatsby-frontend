@@ -62,5 +62,5 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 image: /img/home-jumbotron.jpg
-description: A collection of work done by Daniele Perazzolo.
+description: A collection of work done by Daniele Perazzolo
 ---
