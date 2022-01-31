@@ -6,10 +6,6 @@ import { Link } from 'gatsby'
 import GithubIcon from '../img/github-icon.inline.svg'
 import logo from '../img/logo.svg'
 
-
-// Styles
-import styles from './PrimaryNavigation.scss'
-
 const PrimaryNavigation = class extends React.Component {
   constructor(props) {
     super(props)
@@ -56,14 +52,8 @@ const PrimaryNavigation = class extends React.Component {
           <Link
             to="/"
             className="
-              font-secondary
               tracking-wider
               text-xl
-              text-primary
-              hover:text-black
-              active:text-black
-              focus:text-black
-              transition-all
             "
             title="Logo"
           >
@@ -109,43 +99,11 @@ const PrimaryNavigation = class extends React.Component {
             flex
             gap-6
             font-secondary
+            text-xl
           ">
-            <Link
-              className="
-                text-primary
-                hover:text-black
-                active:text-black
-                focus:text-black
-                transition-all
-              "
-              to="/resume"
-            >
-              Resume
-            </Link>
-            <Link
-              className="
-                text-primary
-                hover:text-black
-                active:text-black
-                focus:text-black
-                transition-all
-              "
-              to="/projects"
-            >
-              Projects
-            </Link>
-            <Link
-              className="
-                text-primary
-                hover:text-black
-                active:text-black
-                focus:text-black
-                transition-all
-              "
-              to="/contact"
-            >
-              Contact
-            </Link>
+            <Link to="/resume">Resume</Link>
+            <Link to="/projects">Projects</Link>
+            <Link to="/contact">Contact</Link>
           </div>
         </div>
       </nav>

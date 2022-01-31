@@ -4,5 +4,18 @@
 /*! ===== END FONTS ===== */
 
 @tailwind base;
+@layer base {
+  body {
+    @apply font-primary;
+  }
+  a {
+    @apply text-primary transition-all;
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    @apply text-black
+  }
+}
 @tailwind components;
 @tailwind utilities;
