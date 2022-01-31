@@ -38,12 +38,12 @@ const PrimaryNavigation = class extends React.Component {
   render() {
     return (
       <nav className="
-        flex
         bg-white
-        pt-5
-        pb-3
-        px-7
         drop-shadow-nav
+        flex
+        pb-3
+        pt-5
+        px-7
       ">
         <div
           id="PrimaryNavigation-brand"
@@ -52,8 +52,8 @@ const PrimaryNavigation = class extends React.Component {
           <Link
             to="/"
             className="
-              tracking-wider
               text-xl
+              tracking-wider
             "
             title="Logo"
           >
@@ -79,18 +79,18 @@ const PrimaryNavigation = class extends React.Component {
             className="float-right">
             <a
               className="
-                w-7
-                inline-block
                 group
+                inline-block
+                w-7
               "
               href="https://github.com/dfpera/"
               target="_blank"
             >
               <GithubIcon className="
                 fill-black
-                group-hover:fill-primary
                 group-active:fill-primary
                 group-focus:fill-primary
+                group-hover:fill-primary
                 transition-all
               "/>
             </a>

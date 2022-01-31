@@ -8,6 +8,7 @@ const Footer = class extends React.Component {
   render() {
     return (
       <footer className='
+        bg-white
         flex
         py-10
       '>
