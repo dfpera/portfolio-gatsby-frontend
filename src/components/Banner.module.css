@@ -1,0 +1,87 @@
+.banner {
+  background-image: url('../img/background.jpg');
+  @apply
+    bg-no-repeat
+    bg-cover
+    font-secondary
+    pb-7
+  ;
+
+  > .intro {
+    &:before {
+      @apply
+        -mt-3
+        bg-contrast-low
+        block
+        font-primary
+        px-4
+        py-2
+        rounded-t-lg
+        text-black
+        text-sm
+        tracking-wider
+      ;
+      content: "\003E_";
+    }
+
+    @apply
+      bg-primary-darker
+      font-secondary
+      inline-block
+      m-0
+      mt-20
+      rounded-b-lg
+      text-base
+      text-contrast-a45
+    ;
+
+    > h1,
+    > p {
+      @apply
+        mx-5
+        my-0
+        p-0
+      ;
+    }
+
+    > p > span,
+    > h1 {
+      @apply
+        font-bold
+        text-white
+      ;
+    }
+
+    > p:first-child {
+      @apply mt-2;
+    }
+
+    > p:last-child {
+      @apply mb-2;
+    }
+
+    p {
+      @apply leading-snug;
+    }
+
+    > p.cursor {
+      @apply relative;
+    }
+
+    > p.cursor:after {
+      @apply
+        absolute
+        bg-white
+        bottom-2
+        h-5
+        w-3
+        inline-block
+        leading-3
+        -mb-1
+        ml-2
+        text-base
+      ;
+      content: "";
+    }
+  }
+}

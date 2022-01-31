@@ -7,6 +7,7 @@ import { withPrefix } from 'gatsby'
 import Footer from '../Footer'
 import PrimaryNavigation from '../PrimaryNavigation'
 import useSiteMetadata from '../SiteMetadata'
+import Banner from '../Banner'
 
 const DefaultLayout = ({ children }) => {
   const { title, description } = useSiteMetadata()
@@ -16,7 +17,6 @@ const DefaultLayout = ({ children }) => {
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
-
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -34,14 +34,11 @@ const DefaultLayout = ({ children }) => {
           href={`${withPrefix('/')}img/favicon-16x16.png`}
           sizes="16x16"
         />
-
         <link
           rel="mask-icon"
           href={`${withPrefix('/')}img/safari-pinned-tab.svg`}
           color="#ff4400"
         />
-        <meta name="theme-color" content="#fff" />
-
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
@@ -51,7 +48,8 @@ const DefaultLayout = ({ children }) => {
         />
       </Helmet>
       <PrimaryNavigation />
-      <div>{children}</div>
+      <Banner />
+      {children}
       <Footer />
     </div>
   )
