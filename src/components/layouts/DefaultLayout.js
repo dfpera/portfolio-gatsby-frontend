@@ -1,12 +1,14 @@
+// Packages
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
-import '../styles/all.sass'
-import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
-const TemplateWrapper = ({ children }) => {
+// Components
+import Footer from '../Footer'
+import PrimaryNavigation from '../PrimaryNavigation'
+import useSiteMetadata from '../SiteMetadata'
+
+const DefaultLayout = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
     <div>
@@ -48,11 +50,11 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      <Navbar />
+      <PrimaryNavigation />
       <div>{children}</div>
       <Footer />
     </div>
   )
 }
 
-export default TemplateWrapper
+export default DefaultLayout

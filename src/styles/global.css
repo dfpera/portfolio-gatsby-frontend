@@ -1,0 +1,8 @@
+/*! ===== FONTS ===== */
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono:400,600,700|Roboto:300,400,400i,700');
+/* @import "_font_awesome.css" */
+/*! ===== END FONTS ===== */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
